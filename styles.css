@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    /* font-family: 'Inter', sans-serif; */
+}
+
+h1,
+h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/* HEADER */
+.header.navbar {
+    background-color: transparent !important;
+}
+
+.navbar {
+    background-color: transparent !important;
+}
+
+/* COVER */
+.fullscreen-cover {
+    min-height: 100vh;
+    /* Ensures the cover fills the viewport height */
+    overflow-y: auto;
+    /* Makes the cover scrollable */
+    position: relative;
+    /* Needed for absolute positioning of child elements */
+    background-image: url('img/IMG_8784.JPG');
+    /* Path to your image */
+    background-position: center;
+    /* Centers the background image */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    background-size: cover;
+    /* Scales the background image to cover the entire container */
+}
+
+.content-below {
+    padding-top: 50px;
+
+}
+
+/* BODY */
+.content-left-and-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-fluid {
+    border-radius: 10px;
+}
+
+.right-allign {
+    text-align: right;
+}
+
+.left-allign {
+    text-align: left;
+}
+
+.img-square {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.highlight-text {
+    font-weight: bold;
+    font-style: italic;
+    color: lightgreen;
+    /* Adjust color to fit your theme */
+}
+
+.first-container {
+    background: #ffff;
+    border-radius: 20px;
+    padding: 80px 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /* Ensures content stays within rounded corners */
+}
+
+/* TRANSITION */
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-in, transform 0.6s ease-in;
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-left.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
