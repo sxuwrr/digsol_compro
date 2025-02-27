@@ -89,6 +89,44 @@ p {
     /* Ensures content stays within rounded corners */
 }
 
+.other-systems-section {
+    padding: 50px 20px;
+    background: lightgreen;
+    /* border-radius: 20px; */
+}
+
+.other-systems-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.other-systems-section .card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.other-systems-section .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.other-systems-section .card-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.carousel-item img {
+    height: 300px;
+    /* Adjust as needed */
+    object-fit: cover;
+}
+
 /* TRANSITION */
 .fade-up {
     opacity: 0;
