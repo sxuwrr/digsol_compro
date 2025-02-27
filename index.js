@@ -1,3 +1,13 @@
+// NAV
+window.addEventListener('scroll', function () {
+  let navbar = document.querySelector('.custom-nav');
+  if (window.scrollY > 50) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});
+
 document.addEventListener('DOMContentLoaded', function () {
   const images = document.querySelectorAll('.fade-up');
 
